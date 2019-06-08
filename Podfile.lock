@@ -1,0 +1,43 @@
+PODS:
+  - BTNavigationDropdownMenu (0.5)
+  - CSV.swift (2.4.0)
+  - Eureka (5.0.0)
+  - R.swift (5.0.3):
+    - R.swift.Library (~> 5.0.0)
+  - R.swift.Library (5.0.1)
+  - Realm (3.15.0):
+    - Realm/Headers (= 3.15.0)
+  - Realm/Headers (3.15.0)
+  - RealmSwift (3.15.0):
+    - Realm (= 3.15.0)
+
+DEPENDENCIES:
+  - BTNavigationDropdownMenu
+  - CSV.swift
+  - Eureka
+  - R.swift
+  - Realm
+  - RealmSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - BTNavigationDropdownMenu
+    - CSV.swift
+    - Eureka
+    - R.swift
+    - R.swift.Library
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  BTNavigationDropdownMenu: ba3a26fdb6a56c4721c31df8a0875106c259663a
+  CSV.swift: 947283699fe698d08a4d675d9e642c2bf32418a8
+  Eureka: 0f64f477ec8ef6201c6fec143d60ff5c201cf654
+  R.swift: f5a87643b91ea569d23d6afb3eee9c743edde239
+  R.swift.Library: cfe85d569d9bae6cb262922db130e7c3a7a5fad1
+  Realm: 9b834e1be6062f544805252c812348872dc5d4ed
+  RealmSwift: 8a41886f8ab6efef9eb8df97de2f2bb911561a79
+
+PODFILE CHECKSUM: 09299a1c2c14916dadb3fc092ff7ef33dcfe3328
+
+COCOAPODS: 1.6.1

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,50 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="RealmEx" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4E-Ld-Z0W">
+                                <rect key="frame" x="0.0" y="782" width="207" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pictureSetting:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nHi-ng-19r"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jB3-aI-xVX">
+                                <rect key="frame" x="0.0" y="44" width="414" height="738"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycL-Cv-pn5">
+                                <rect key="frame" x="207" y="782" width="207" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.35294117650000001" green="0.94901960780000005" blue="0.77647058820000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="jB3-aI-xVX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="0E2-gM-aBR"/>
+                            <constraint firstItem="ycL-Cv-pn5" firstAttribute="width" secondItem="D4E-Ld-Z0W" secondAttribute="width" id="C8B-Gw-gDk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="D4E-Ld-Z0W" secondAttribute="bottom" constant="50" id="EgO-jp-7hD"/>
+                            <constraint firstItem="D4E-Ld-Z0W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qk9-Jd-TjH"/>
+                            <constraint firstItem="D4E-Ld-Z0W" firstAttribute="top" secondItem="jB3-aI-xVX" secondAttribute="bottom" id="TL9-7l-VST"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ycL-Cv-pn5" secondAttribute="trailing" id="Ybg-YI-zTH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jB3-aI-xVX" secondAttribute="trailing" id="c3h-kj-Y9S"/>
+                            <constraint firstItem="jB3-aI-xVX" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="cBr-AF-UTo"/>
+                            <constraint firstItem="ycL-Cv-pn5" firstAttribute="leading" secondItem="D4E-Ld-Z0W" secondAttribute="trailing" id="e9X-b4-VSD"/>
+                            <constraint firstItem="ycL-Cv-pn5" firstAttribute="leading" secondItem="D4E-Ld-Z0W" secondAttribute="trailing" id="mks-tj-E7C"/>
+                            <constraint firstItem="ycL-Cv-pn5" firstAttribute="height" secondItem="D4E-Ld-Z0W" secondAttribute="height" id="nuO-y8-tVX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="ycL-Cv-pn5" secondAttribute="bottom" constant="50" id="x5g-HI-gwR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="imageView" destination="jB3-aI-xVX" id="r0a-FX-TaA"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-135" y="-533"/>
         </scene>
     </scenes>
 </document>
