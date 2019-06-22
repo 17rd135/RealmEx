@@ -10,9 +10,17 @@ import UIKit
 import Foundation
 import RealmSwift
 
-
+class Day: Object {
+    @objc dynamic var jugyou_name = ""
+    let dairys = List<Diary>()
+    
+    override static func primaryKey() -> String? {
+        return "jugyou_name"
+    }
+}
 
 class Diary: Object {
+    @objc dynamic var id = 0
     @objc dynamic var url = ""
 }
 
