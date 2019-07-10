@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D66942B122D64AE400D3F165 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = D66942B022D64AE400D3F165 /* File.swift */; };
 		D67C376D22BD163A0029ACF3 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D67C376C22BD163A0029ACF3 /* Photo.swift */; };
 		D686387622B5193C00A656D0 /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D686387522B5193C00A656D0 /* SubViewController.swift */; };
 		D689706B22900C9700658E25 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D689706A22900C9700658E25 /* AppDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		15DC258BEF582EC892A096E9 /* Pods-RealmEx.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RealmEx.debug.xcconfig"; path = "Target Support Files/Pods-RealmEx/Pods-RealmEx.debug.xcconfig"; sourceTree = "<group>"; };
 		520D1ADC88076E7BBAA56F46 /* Pods_RealmEx.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RealmEx.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D66942B022D64AE400D3F165 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		D67C376C22BD163A0029ACF3 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 		D686387522B5193C00A656D0 /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		D689706722900C9700658E25 /* RealmEx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RealmEx.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -81,6 +83,7 @@
 				D6A95FD722B684630024BBD3 /* ClassViewController.swift */,
 				D689706C22900C9700658E25 /* ViewController.swift */,
 				D686387522B5193C00A656D0 /* SubViewController.swift */,
+				D66942B022D64AE400D3F165 /* File.swift */,
 				D6A7F67D2291535800736396 /* Diary.swift */,
 				D67C376C22BD163A0029ACF3 /* Photo.swift */,
 				D689706E22900C9700658E25 /* Main.storyboard */,
@@ -232,6 +235,7 @@
 			files = (
 				D67C376D22BD163A0029ACF3 /* Photo.swift in Sources */,
 				D689706D22900C9700658E25 /* ViewController.swift in Sources */,
+				D66942B122D64AE400D3F165 /* File.swift in Sources */,
 				D6A95FD822B684630024BBD3 /* ClassViewController.swift in Sources */,
 				D689706B22900C9700658E25 /* AppDelegate.swift in Sources */,
 				D6A7F67E2291535800736396 /* Diary.swift in Sources */,
